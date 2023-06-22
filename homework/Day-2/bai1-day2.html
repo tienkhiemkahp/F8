@@ -3,11 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bài 1</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .container {
+            background-color: #ccc;
+            width: 100%;
+            height: 120vh;
+        }
+
+        .left, .right {
+        display: inline-block;
+        vertical-align: top;
+        padding: 20px;
+        }
+        input {
+            padding-right: 100px;
+            padding-top: 10px;
+            margin-bottom: 5px;
+        }
+        .left div, .right div {
+            padding-top: 15px;
+        }
+        select {
+            padding-right: 147px;
+            padding-top: 12px;
+            margin-bottom: 5px;
+        }
+        .detail {
+            margin-left: 20px;
+            width: 40%;
+            margin-top: 20px;
+
+        }
+        button {
+            background-color: #07778f;
+            color: white;
+            margin-left: 20px;
+            padding: 10px;
+            border: none;
+        }
+        h1 {
+            margin-left: 20px;
+        }
+        span {
+            opacity: 0.5;
+        }
+    </style>
 </head>
 <body>
-    <h1>Get in touch with us by filling contact form below</h1>
-    <form>
-    </form>
+    <div class="container">
+        <h1>Try a free sample</h1>
+        <p class="detail">Sign up to get a coupon you can redeem at your nearest Dancing Goat cafe for a sample of the Colombia Carlos Imbachi coffee. We'll also make sure you don't miss out on news introducing the new coffees that we add to our store regularly.</p>
+        <form>
+            <div class="left">
+                <div>
+                    <p><b>First name</b></p>
+                    <input type="text" id="First-name"> 
+                </div>
+                <div>
+                    <p><b>Email address</b></p>
+                    <input type="email" id="Email-address"> 
+                </div>
+                <div>
+                    <p><b>City</b></p>
+                    <input type="text" id="City"> 
+                </div>
+                <div>
+                    <p><b>ZIP code</b></p>
+                    <input type="text" id="ZIP-code"> 
+                </div>
+            </div>
+            <div class="right">
+                <div>
+                    <p><b>Last name</b></p>
+                    <input type="text" id="Last-name"> 
+                </div>
+                <div>
+                    <p><b>Address</b></p>
+                    <input type="text" id="Address"> 
+                </div>
+                <div>
+                    <p><b>State</b><span>(optioal)</span></p>
+                    <input type="text" id="State"> 
+                </div>
+                <div>
+                    <p><b>Country</b></p>
+                    <select name="Country">
+                        <option >United Kingdom</option>
+                        <option >Laos</option>
+                        <option >Vietnam</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <button>SEND ME FREE COFFEE</button>
+            </div>
+        </form>
+    </div>
 </body>
 </html>

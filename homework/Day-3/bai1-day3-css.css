@@ -1,0 +1,57 @@
+.container {
+    margin-top: 100px;
+    margin-left: 50px;
+}
+h1 {
+    font-size: 40px;
+    position: relative;
+}
+h1::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 6%;
+    height: 3px;
+    background-color: #FF9900;
+}
+h2 {
+    font-size: 26px;
+}
+i, p {
+    display: inline-block;
+    margin-top: 10px;
+    opacity: 0.5;
+}
+i {
+    font-size: 30px;
+}
+p {
+    font-size: 17px;
+    margin-left: 30px;
+}
+.contact-info, .contact-form {
+    display: inline-block;
+    vertical-align: top;
+}
+.contact-form {
+    margin-left: 100px;
+}
+input {
+    display: block;
+    padding: 10px;
+    padding-right: 800px;
+    margin-bottom: 30px;
+}
+textarea {
+    padding: 10px;
+    padding-right: 727px;
+}
+button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: rgb(31, 131, 131);
+    display: block;
+    border: none;
+    color: white;
+}

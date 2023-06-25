@@ -1,0 +1,38 @@
+.container {
+    width: 30%;
+}
+.option {
+    margin-top: 15px ;
+}
+.option>label, .option div {
+    display: inline-block;
+    vertical-align: middle;
+}
+.option div>label {
+    display: block;
+}
+.option>label {
+    width: 25%;
+}
+.text-input label {
+    width: 20%;
+    display: inline-block;
+}
+.text-input input {
+    margin: 5px;
+    display: inline-block;
+}
+select {
+    padding: 3px;
+    margin-left: 25px ;
+    margin-top: 5px;
+    display: inline-block;
+}
+.server label {
+    width: 20%;
+    display: inline-block;
+}
+.button-login-reset {
+    margin-top: 15px;
+    margin-left: 85px;
+}

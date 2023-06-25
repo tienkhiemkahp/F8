@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./ex3-day3-css.css">
+    <title>Bài 3</title>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="text-input">
+                <label for="Usename">Usename</label>
+                <input type="text" id="Usename" name="Username">
+            </div>
+            <div class="text-input">
+                <label for="Usename">Password</label>
+                <input type="password" id="Password" name="Password">
+            </div>
+            <div class="text-input">
+                <label for="Usename">City of Employment</label>
+                <input type="text" id="City" name="City">
+            </div>
+            <div class="server">
+                <Label for="server">Web server</Label>
+                <select name="server" id="server">
+                    <option value="0" hidden>--Choose a server</option>
+                    <option value="1">SEA</option>
+                    <option value="2">EU</option>
+                    <option value="3">NA</option>
+                </select>
+            </div>
+            <div class="option">
+                <label>Please specify your role</label>
+                <div>
+                    <label><input type="radio" value="1" name="role">Admin</label>
+                    <label><input type="radio" value="2" name="role">Engineer</label>
+                    <label><input type="radio" value="3" name="role">Manager</label>
+                    <label><input type="radio" value="4" name="role">Guest</label>
+                </div>
+            </div>
+            <div class="option">
+                <label>Single Sign-on to the following</label>
+                <div>
+                    <label><input type="checkbox" value="2" >Mail</label>
+                    <label><input type="checkbox" value="3" >Payroll</label>
+                    <label><input type="checkbox" value="4" >Self-service</label>
+                </div>
+            </div>
+            <div class="button-login-reset">
+                <button>Login</button>
+                <button input type="reset" value="Reset" >Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

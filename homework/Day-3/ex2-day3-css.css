@@ -1,0 +1,48 @@
+h1 {
+    text-align: center;
+    position: relative;
+}
+h1::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    right: 48%;
+    width: 5%;
+    height: 3px;
+    background-color: #608CFD;
+}
+.customer-avatar {
+    width: 60px;
+    height: 60px;
+    background-color: #93DEA4;
+    border-radius: 50%;
+}
+.customer-avatar, blockquote {
+    display: inline-block;
+    vertical-align: top;
+}
+blockquote {
+    width: 50%;
+    font-size: 16px;
+    font-style: italic;
+    opacity: 0.7;
+}
+.item > div {
+    display: inline-block;
+    width: 30%;
+    margin: 20px;
+}
+p{
+    text-align: center;
+    margin-top: 25%;
+    color: white;
+    font-size: 30px;
+}
+.item {
+    margin-top: 50px;
+    margin-left: 70px;
+}
+cite {
+    font-style: normal;
+    font-weight: bolder;
+}

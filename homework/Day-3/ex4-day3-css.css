@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.container {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ul>li {
+    display: inline-block;
+    padding: 10px 38px 10px 38px;
+    font-size: 20px;
+}
+.list {
+    width: fit-content;
+    height: fit-content;
+    border: 3px solid #a88939;
+}
+ul>li:first-child {
+    background-color: #a88939;
+    color: white;
+}
+a {
+    text-decoration: none; 
+    color: black;
+}
+a, p {
+    opacity: 0.6; 
+    font-size: 18px;
+}
+.main {
+    margin-top: 60px;
+}
+.info, .map {
+    display: inline-block;
+    vertical-align: top;
+}
+.info {
+    position: relative;
+    width: 30%;
+    background-color: #F6F6F6;
+    height: 450px;
+    margin-right: 0;
+}
+.content {
+    position: absolute;
+    left: 30px;
+    top: 50px;
+    width: 80%;
+    height: 90%;
+}
+strong {
+    font-size: 28px;
+}
+.Company-name, .address, .contact-menthod {
+    margin-bottom: 30px;
+}

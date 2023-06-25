@@ -1,0 +1,39 @@
+.section {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    background-color: #8498CB;
+    width: 120px; 
+    height: 50px; 
+    margin: 20px auto;
+    color: white;
+  }
+  h1 {
+    font-size: 40px;
+    justify-content: center;
+    margin: 20px auto;
+    display: flex;
+  }
+  .highlight {
+    color: #00ABF0;
+  }
+  .container>p {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    font-size: 20px;
+  }
+  .buttons {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+  }
+  button {
+    padding: 15px;
+    margin: 5px;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+  }
+
+  

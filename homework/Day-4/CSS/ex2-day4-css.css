@@ -1,0 +1,73 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-top: 20px;
+    zoom: 200%;
+}
+.container {
+    text-align: center;
+}
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('../CSS/font/BebasNeue.otf') format('truetype');
+  }
+  @font-face {
+    font-family: 'AlfaSlabOne';
+    src: url('../CSS/font/AlfaSlabOne-Regular.ttf') format('truetype');
+  }
+.left, .right {
+    display: inline-block;
+    vertical-align: top;
+}
+.right {
+    margin-left: 10px;
+}
+input, button {
+    display: block;
+}
+input {
+    width: 147px;
+    height: 22px;
+    margin-bottom: 15px;
+    border-width: thin;
+    border: 0.1px solid black;
+    border-radius: 0px;
+}
+input::placeholder {
+    color: black;
+    font-family: 'BebasNeue';
+    padding-left: 5px;
+}
+input[type="time"] {
+    width: 150px;
+    height: 24px;
+}
+input[type="date"] {
+    width: 150px;
+    height: 24px;
+}
+button {
+    color: white;
+    background-color: #B0332B;
+    border: none;
+    width: 152px;
+    height: 25px;
+    border-radius: 3px;
+    font-size: 10px;
+    font-family: 'AlfaSlabOne';
+}
+h1 {
+    font-weight: normal;
+    font-size: 13px;
+    font-family: 'BebasNeue' ;
+}
+.reservation-message {
+    margin-bottom: 11px;
+    color: #3A2617;
+    font-family: 'AlfaSlabOne';
+    font-weight: bold;
+    font-size: 23px;
+}
+

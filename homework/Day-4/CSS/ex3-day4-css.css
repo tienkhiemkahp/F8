@@ -1,0 +1,159 @@
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.list {
+    list-style: none;
+}
+
+ul > li {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+}
+
+label {
+    display: flex;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    background-color: #F5F5F5;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-items > div {
+    display: inline-block;
+    position: relative;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+input {
+    display: none;
+}
+
+.list-items {
+    display: none;
+}
+
+#Skincare:checked ~ #list-skincare-items,
+#Haircare:checked ~ #list-haircare-items,
+#Cosmetics-cases:checked ~ #list-cosmetics-cases-items,
+#Fragrance:checked ~ #list-fragrance-items,
+#Makeup:checked ~ #list-makeup-items {
+    display: inline-block;
+}
+
+img {
+    display: block;
+    width: 250px;
+    height: 300px;
+}
+
+.image-2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+#skincare-item-1-image-1:hover ~ #skincare-item-1-image-2,
+#skincare-item-2-image-1:hover ~ #skincare-item-2-image-2,
+#skincare-item-3-image-1:hover ~ #skincare-item-3-image-2,
+#skincare-item-4-image-1:hover ~ #skincare-item-4-image-2,
+#haircare-item-1-image-1:hover ~ #haircare-item-1-image-2,
+#haircare-item-2-image-1:hover ~ #haircare-item-2-image-2,
+#haircare-item-3-image-1:hover ~ #haircare-item-3-image-2,
+#haircare-item-4-image-1:hover ~ #haircare-item-4-image-2,
+#cosmetics-item-1-image-1:hover ~ #cosmetics-cases-item-1-image-2,
+#cosmetics-item-2-image-1:hover ~ #cosmetics-cases-item-2-image-2,
+#cosmetics-item-3-image-1:hover ~ #cosmetics-cases-item-3-image-2,
+#cosmetics-item-4-image-1:hover ~ #cosmetics-cases-item-4-image-2,
+#fragrance-item-1-image-1:hover ~ #fragrance-item-1-image-2,
+#fragrance-item-2-image-1:hover ~ #fragrance-item-2-image-2,
+#fragrance-item-3-image-1:hover ~ #fragrance-item-3-image-2,
+#fragrance-item-4-image-1:hover ~ #fragrance-item-4-image-2,
+#makeup-item-1-image-1:hover ~ #makeup-item-1-image-2,
+#makeup-item-2-image-1:hover ~ #makeup-item-2-image-2,
+#makeup-item-3-image-1:hover ~ #makeup-item-3-image-2,
+#makeup-item-4-image-1:hover ~ #makeup-item-4-image-2,
+.image-1:hover ~ .action-button {
+    display: block;
+}
+
+.action-button {
+    position: absolute;
+    display: none;
+    top: 180px;
+    left: 6px;
+}
+
+button {
+    border: none;
+}
+
+.icon-button {
+    display: inline-block;
+    background-color: #29388E;
+    color: white;
+    margin: 5px;
+    padding: 12px 25px 12px 25px;
+}
+
+.add-to-Cart {
+    display: block;
+    background-color: #29388E;
+    color: white;
+    padding: 12px 74.5px 12px 74.5px;
+    margin-left: 5px;
+}
+
+.item-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+}
+
+.star-rating {
+    color: #F4C242;
+    text-align: center;
+    font-size: 35px;
+}
+
+.star-rating span {
+    color: #9F9F9F;
+}
+
+#Skincare:checked ~ ul li label[for="Skincare"],
+#Haircare:checked ~ ul li label[for="Haircare"],
+#Cosmetics-cases:checked ~ ul li label[for="Cosmetics-cases"],
+#Fragrance:checked ~ ul li label[for="Fragrance"],
+#Makeup:checked ~ ul li label[for="Makeup"] {
+    background-color: #29388E;
+    color: #F5F5F5;
+}
+.item-infomation>div {
+    margin-bottom: 7px; 
+}
+.item-name {
+    opacity: 0.5;
+    font-size: 17px;
+}
+.item-price {
+    font-size: 25px;
+    font-weight: bold;
+}
+h1 {
+    font-size: 50px;
+}

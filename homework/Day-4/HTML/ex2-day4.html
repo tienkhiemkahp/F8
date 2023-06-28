@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/ex2-day4-css.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>RESERVATION</h1>
+        <div class="reservation-message">Book your table</div>
+        <form>
+            <div class="left">
+                <input type="text" name="name" id="name" placeholder="NAME">
+                <input type="text" onblur="this.type='text'" onfocus="this.type='date'" placeholder="DATE" name="date" id="date">
+                <input type="text" onblur="this.type='text'" onfocus="this.type='number'" name="people" id="people" placeholder="PEOPLE" min="1" max="100">
+            </div>
+            <div class="right">
+                <input type="email" name="email" id="email" placeholder="EMAIL">
+                <input type="text" name="time" id="time" placeholder="TIME" onblur="this.type='text'" onfocus="this.type='time'" >
+                <button>Find A Table</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+*{
+    color: white;
+    margin: 0;
+}
+.container {
+    margin-top: 20px;
+    margin-left: 60px;
+    width: 800px;
+    height: 160px;
+    background-color: #334455;
+    border-radius: 10px;
+    position: relative;
+}
+.main {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+.highlight {
+    color: #eb8d22;
+}
+p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+input, button {
+    padding: 7px;
+    padding-right: 17px;
+    padding-left: 17px;
+    border-radius: 5px;
+}
+button {
+   background-color: #f8db35;
+   color: black;
+}
+.container:hover input::placeholder {
+    color: #eb8d22;
+}
+.container:hover input {
+    background-color: #ddd;
+}
+.container:hover button {
+    color: white;
+    background-color: #eb8d22 ;
+}

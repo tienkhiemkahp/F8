@@ -1,0 +1,107 @@
+
+input[type="radio"]{
+    display: none;
+}
+.left-icon, .right-input,.right-textarea, .right-select {
+    display: inline;
+    vertical-align: middle;
+}
+input[type="email"]{
+    height: 99%;
+}
+input{
+    outline: none;
+    font-size: 18px;
+    width: 530px;
+    height: 100%;
+    border-radius: 0px;
+    border-left: none;
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding-left: 20px;
+}
+select {
+    outline: none;
+    font-size: 18px;
+    width: 554px;
+    height: 60px;
+    border-radius: 0px;
+    text-align: left;
+    padding-left: 20px;
+    border-left: none;
+    border: 1px solid #dddddd;
+}
+.text-input, .subject-input, .message-input{
+    height: 57px;
+    margin-top: 30px;
+    position: relative;
+}
+.left-icon {
+    background-color: #dddddd;
+    color: white;
+    padding: 21px;
+    border: 1px solid #dddddd;
+}
+.custom-textarea {
+    outline: none;
+    padding-top: 10px;
+    font-size: 18px;
+    width: 530px;
+    height: 150px;
+    resize: none;
+    border: 1px solid #dddddd;
+    padding-left: 20px;
+}
+#left-mesage-icon {
+    padding-top: 75px;
+    padding-bottom: 70px;
+}
+.text-input:hover .left-icon,
+.subject-input:hover .left-icon,
+.message-input:hover .left-icon{
+    background-color: black;
+    border: 1px solid black;
+}
+.text-input:hover .right-input,
+.subject-input:hover .right-select,
+.message-input:hover .right-textarea{
+    outline: 1px solid black;
+
+}
+.text-input:focus-within .left-icon,
+.subject-input:focus-within .left-icon,
+.message-input:focus-within .left-icon {
+    background-color: black;
+}
+.text-input:focus-within .right-input,
+.select-input:focus-within .select-input,
+.message-input:focus-within .message-input
+{
+    outline: 1px solid black;
+}
+.right-input::after{
+    content: '⋆';
+    display: inline;
+    margin-left: -40px;
+    font-size: 25px;
+    color: #dddddd;
+}
+.right-textarea::after{
+    content: '⋆';
+    padding-top: 10px;
+    display: inline-block;
+    position: absolute;
+    margin-left: -40px;
+    font-size: 25px;
+    color: #dddddd ;
+}
+.text-input:focus-within .right-input::after{
+    content: '✖';
+    font-size: 14px;
+}
+.message-input:focus-within .right-textarea::after{
+    content: '✖';
+    font-size: 14px;
+    margin-top: 6px;
+}
+

@@ -1,0 +1,43 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    font-size: 23px ;
+    text-align: center;
+}
+.container>p {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+.list {
+    text-align: center;
+    display: inline-block;
+    width: 310px ;
+    height: 350px ;
+    margin-right: 20px;
+    box-shadow: 0px 0px 5px #EAEAEA;
+}
+.icon {
+    text-align: center;
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 110px;
+    font-size: 45px;
+    height: 110px;
+    border-radius: 999px;
+    border: 4px solid #F2A93A ;
+    color: #F2A93A;
+}
+i {
+    margin-top: 32px;
+}
+button {
+    padding: 12px 16px 12px 16px;
+    border: none;
+    background-color: #F2A93A;
+    color: white;
+}

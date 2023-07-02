@@ -1,4 +1,23 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lobster&display=swap');
+body {
+    height: 200vh;
+    padding-left: 70px;
+    zoom: 70% ;
+}
+*{
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+}
+h1 {
+    font-size: 50px;
+    font-family: 'Lobster';
+}
+p {
+    width: 40%;
+}
+.hight-light {
+    color: #F1837B ;
+}
 input[type="radio"]{
     display: none;
 }
@@ -8,6 +27,9 @@ input[type="radio"]{
 }
 input[type="email"]{
     height: 99%;
+}
+.right-input {
+    position: relative;
 }
 input{
     outline: none;
@@ -43,7 +65,6 @@ select {
     border: 1px solid #dddddd;
 }
 .custom-textarea {
-    outline: none;
     padding-top: 10px;
     font-size: 18px;
     width: 530px;
@@ -104,4 +125,98 @@ select {
     font-size: 14px;
     margin-top: 6px;
 }
+.popup {
+    position: absolute;
+    top: 100%;
+    margin-top: -120px;
+    left: 25px;
+    display: none;
+    padding: 20px;
+    background-color: black;
+    border: 1px solid #ccc;
+    color: white;
+}
+  
+.popup span {
+    color: #333;
+}
+  
+#name:focus + .popup,
+#email:focus + .popup,
+#phone-number:focus + .popup,
+#message:focus + .textarea-popup {
+ display: block;
+}
+.triangle {
+position: absolute;
+margin-top: 17px;
+border: 15px solid;
+border-color: black transparent transparent transparent;
+}
+.textarea-popup {
+    position: absolute;
+    top: 100%;
+    margin-top: -120px;
+    left: 90px;
+    display: none;
+    padding: 20px;
+    background-color: black;
+    border: 1px solid #ccc;
+    color: white;
+}
+.custom-checkbox {
+    display: inline-block;
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    margin-top: 130px;
+}
 
+.custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.custom-checkbox:hover .checkmark {
+    background-color: #f2f2f2;
+}
+
+.custom-checkbox input:checked ~ .checkmark {
+    background-color: white;
+}
+
+.checkmark:after {
+    content: "\2713";
+    display: none;
+    color: #3C3C3C;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.custom-checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+.chekcbox-title {
+    opacity: 0.6;
+}
+button {
+    margin-left: 263px;
+    padding: 15px 40px 15px 40px;
+    background-color: #E93F32;
+    color: white;
+    border: none;
+}

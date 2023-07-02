@@ -1,0 +1,63 @@
+.content-title {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    height: 100%;
+    color: white;
+    background-color: #D95925 ;
+    height: 40px;
+    position: relative;
+}
+.text {
+    margin-left: 50px;
+}
+.plus {
+    display: block;
+    left: 14px;
+    position: absolute;
+}
+.hyphen  {
+    display: none;
+    font-size: 45px;
+    position: absolute;
+    left: 15px;
+    top: -10px;
+
+}
+.hyphen2, .hyphen3  {
+    display: none;
+    margin-top: -10px;
+    font-size: 45px;
+    position: absolute;
+    left: 15px;
+}
+input {
+    display: none;
+}
+input[id="first-content"]:checked ~ .first-content>.main-content,
+input[id="second-content"]:checked ~ .second-content>.main-content,
+input[id="third-content"]:checked ~ .third-content>.main-content {
+    display: block;
+}
+label {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.main-content {
+    display: none;
+}
+input[id="first-content"]:checked ~ .first-content .plus,
+input[id="second-content"]:checked ~ .second-content .plus,
+input[id="third-content"]:checked ~ .third-content .plus {
+    display: none;
+}
+.container>div {
+    margin-bottom: 10px;
+}
+input[id="first-content"]:checked ~ .first-content .hyphen,
+input[id="second-content"]:checked ~ .second-content .hyphen2,
+input[id="third-content"]:checked ~ .third-content .hyphen3 {
+    display: block;
+}

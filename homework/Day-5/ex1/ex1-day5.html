@@ -9,42 +9,50 @@
 </head>
 <body>
         <h1>Hey there</h1>
-        <p><span>We'd like to hear from you.</span>Send us your message or just say hy with our contact form or directly via phone, we love to chat</p>
-        <input type="radio" name="option" id="name">
-        <input type="radio" name="option" id="">
-        <input type="radio" name="option" id="">
-        <input type="radio" name="option" id="">
+        <p><span class="hight-light">We'd like to hear from you.</span>Send us your message or just say hy with our contact form or directly via phone, we love to chat</p>
         <div class="text-input">
             <label for="name"></label>
             <div class="left-icon">
                 <i class="fa-solid fa-user"></i>
             </div>
             <div class="right-input">
-                <input type="text" id="textInput" placeholder="Your name">
+                <input type="text" id="name" placeholder="Your name">
+                <div class="popup">
+                    Enter your name
+                    <div class="triangle"></div>
+                </div>
             </div>
         </div>
         <div class="text-input">
             <label for="name"></label>
             <div class="left-icon">
-                <i class="fa-solid fa-user"></i>
+                <i class="fa-sharp fa-regular fa-envelope"></i>
             </div>
             <div class="right-input">
-                <input type="email" placeholder="your@domain.com">
+                <input type="email" id="email" placeholder="your@domain.com">
+                <div class="popup">
+                    Enter your mail
+                    <div class="triangle"></div>
+                </div>
             </div>
         </div>
         <div class="text-input">
             <label for="name"></label>
             <div class="left-icon">
-                <i class="fa-solid fa-user"></i>
+                <i class="fa-solid fa-mobile"></i>
             </div>
             <div class="right-input">
-                <input type="tel" placeholder="+44 00 123">
+                <input type="tel" id="phone-number" placeholder="+44 00 123">
+                <div class="popup">
+                    Enter your phone number
+                    <div class="triangle"></div>
+                </div>
             </div>
         </div>
     <div class="subject-input">
         <label for="name"></label>
         <div class="left-icon">
-            <i class="fa-solid fa-user"></i>
+            <i class="fa-sharp fa-light fa-book"></i>
         </div>
         <div class="right-select">
             <select name="" id="">
@@ -58,12 +66,21 @@
     <div class="message-input">
         <label for="name"></label>
         <div id="left-mesage-icon" class="left-icon">
-            <i class="fa-solid fa-user"></i>
+            <i class="fa-regular fa-message"></i>
         </div>
         <div class="right-textarea">
-            <textarea class="custom-textarea" placeholder="Message" name=""></textarea>
+            <textarea id="message" class="custom-textarea" placeholder="Message" name=""></textarea>
+            <div class="textarea-popup">
+                Enter your message
+                <div class="triangle"></div>
+            </div>
         </div>
     </div>
-</div>   
+    <div class="custom-checkbox">
+        <input type="checkbox" id="checkbox">
+        <label for="checkbox" class="checkmark"></label>
+        <Span class="chekcbox-title">Send me a copy of this message</Span>
+    </div>
+    <button>SEND</button>
 </body>
 </html>

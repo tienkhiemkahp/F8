@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(http://uiwebsoft.com/justlog/login-one/images/login-bg2.jpg);
+}
+.left {
+    color: white;
+    width: 310px;
+    height: 435px;
+    background-color: #FF574D ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.logo {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.logo span {
+    padding: 0 4px;
+    background-color: white;
+    color: #FF574D;
+    font-weight: 700;
+    margin-right: 7px;
+}
+p {
+    color: white;
+    margin-bottom: 20px;
+}
+.left-button {
+    background-color: white;
+    color: #FF574D;
+    border: 1px solid transparent;
+    width: 140px;
+    height: 35px;
+    border-radius: 3px;
+    font-weight: 800;
+}
+ul {
+    list-style: none;
+    display: flex;
+    margin-top: 30px;
+}
+li {
+    border-radius: 3px;
+    margin: 0 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    background-color: rgba(0,0,0,0.07);
+}
+li:hover {
+    background-color: white;
+}
+li:hover a {
+    color: #FF574D;
+}
+li>a {
+    color: white;
+}
+.right {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 435px;
+    height: 435px;
+    background-color: white;
+}
+.form-login{
+    display: flex;
+}
+h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+h2>span {
+    color: #FF574D;
+}
+.title h2::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid #FF574D;
+    width: 20%;
+    margin: 5px auto;
+}
+input[type="email"],
+input[type="password"] {
+    height: 45px;
+    width: 330px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+input[type="password"] {
+    margin-bottom: 10px;
+}
+.right-button {
+    width: 350px;
+    height: 45px;
+    background-color: #FF574D;
+    color: white;
+    border: none;
+}
+.right a {
+    text-decoration: none;
+    color: black;
+}
+.password-detail {
+    width: 350px;
+    display: flex;
+    font-size: 15px;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 10px;
+}
+.right-button {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.password-detail a{
+    margin-left: 125px;
+}
+label {
+    margin-left: 2px;
+}
+.right-button:hover {
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+}
+.left-button:hover {
+    border-color: white;
+    background-color: #FF574D;
+    color: white;
+}
+.arrow-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 99px;
+    color: #FF574D;
+    align-self: flex-start;
+    position: absolute;
+    left: -20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+}

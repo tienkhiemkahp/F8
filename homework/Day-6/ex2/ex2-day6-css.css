@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lobster&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background-color:  #EDF4FC;
+}
+.second-row {
+    margin-top: 40px;
+}
+a {
+    color: #4d7dee;
+    text-decoration: none;
+    font-size: 13px;
+}
+.row {
+    display: flex;
+    justify-content: center;
+}
+.container {
+    margin: 100px auto;
+    max-width: 1200px;
+}
+.box {
+    margin: 0 25px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 290px;
+    height: 190px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    box-shadow: 0 0 10px rgba(155, 153, 153, 0.3);
+    background-color: white;
+}
+.logo {
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #E46E65;
+    border-radius: 99px;
+    box-shadow: 0 0 10px #E46E65;
+    color: white;
+    margin-right: 25px;
+}
+.themme .logo {
+    background-color: #6FCAA1;
+    box-shadow: 0 0 10px #6FCAA1;
+}
+.website-design .logo {
+    background-color: #678FE4;
+    box-shadow: 0 0 10px #678FE4;
+}
+.responsive-design .logo {
+    background-color: #8B38D7;
+    box-shadow: 0 0 10px #8B38D7;
+}
+.quick-support .logo {
+    background-color: #7BA23E;
+    box-shadow: 0 0 10px #7BA23E;
+}
+.digital-marketing .logo {
+    background-color: #EEAF42;
+    box-shadow: 0 0 10px #EEAF42; 
+}
+.title {
+    font-size: 25px;
+}
+.box-header {
+    margin-top: 15px;
+    margin-left: 10px;
+    align-self: start;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 15px;
+}
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+}
+p {
+    font-size: 14px;
+    align-self: center;
+    color: #8f8f8f;
+    margin-bottom: 10px;
+}
+.box:hover {
+    border-color: red ;
+}

@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Asap', sans-serif;
+}
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+h1 {
+    align-self: start;
+    margin-left: -5% ;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+.provincial-list ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.provincial-list ul li {
+    background-color: #e4e4e4;
+    width: 147px;
+    line-height: 20px;
+    text-align: center;
+    display: flex;
+    border-radius: 30px;
+    margin: 10px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 16px;
+}
+.provincial-list span {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 12px;
+}
+.provincial-list ul li:first-child {
+    background-color: #AE7B38;
+    color: white;
+}
+.box {
+    background-size: cover ;
+    width: 420px;
+    height: 245px;
+    background-image: url(https://sunnylands.vn/wp-content/uploads/2017/06/batdongsanSaiGon-SunnyLands.vn-b-789x521.jpg);
+    border-radius: 5px;
+    color: white;
+    font-size: 25px;
+    position: relative;
+    filter: grayscale(30%);
+}
+.district-name {
+    font-size: 22px;
+    font-weight: 800;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+.product-quantity {
+    position: absolute;
+    bottom: 10px;
+    font-size: 16px;
+    font-weight: lighter;
+    font-style: italic;
+    margin-left: 10%;
+}
+.product-quantity span {
+    font-size: 20px;
+    font-style: normal;
+}
+.row {
+    display: flex;
+    margin-bottom: 25px;
+}
+.box {
+    margin: 15px;
+}

@@ -28,7 +28,8 @@
     margin-bottom: 20px;
 }
 .logo span {
-    padding: 0 4px;
+    border-radius: 3px;
+    padding: 0 7px;
     background-color: white;
     color: #FF574D;
     font-weight: 700;
@@ -83,6 +84,8 @@ li>a {
 }
 .form-login{
     display: flex;
+    border: 1px solid transparent;
+    border-radius: 20px;
 }
 h2 {
     font-size: 22px;
@@ -101,6 +104,7 @@ h2>span {
 }
 input[type="email"],
 input[type="password"] {
+    font-size: 16px;
     height: 45px;
     width: 330px;
     padding-left: 20px;

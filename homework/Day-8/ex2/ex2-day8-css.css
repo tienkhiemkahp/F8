@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100Vh;
+    background-color: #7E7E7E ;
+}
+.shopping-cart {
+    width: 25%;
+    background-color: white;
+}
+.shopping-cart-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.shopping-cart-header {
+    background-color: #F4F4F4;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+}
+.title {
+    display: flex;
+    position: relative;
+    margin-left: 20px;
+}
+h2 {
+    font-size: 40px;
+}
+.number {
+    background-color: #4060F2 ;
+    color: white;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right:-7%;
+}
+.x-button {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 35px;
+    width: 30px;
+    height: 30px;
+    color: white;
+    background-color: #EB5B2C;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.order-item {
+    position: relative;
+    margin-top: 40px;
+    display: flex;
+    width: 90%;
+    align-items: center;
+}
+.item-image {
+    width: 130px;
+    height: 130px;
+    background-color: #FEF8EF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img {
+    width: 80%;
+    height: 80%;
+}
+.item-info {
+    margin-left: 25px;
+}
+.quantity-input {
+    margin-top: 20px;
+    width: 130px;
+    height: 40px;
+    border-radius: 99px;
+    border: 1px solid #CDCDCD;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #CDCDCD;
+}
+.item-info span {
+    font-size: 17px;
+}
+.price {
+    margin-top: 40px;
+    font-size: 24px;
+}
+.delete-button {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    font-size: 24px;
+}

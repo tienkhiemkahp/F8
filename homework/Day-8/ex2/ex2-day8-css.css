@@ -98,11 +98,80 @@ img {
 }
 .price {
     margin-top: 40px;
-    font-size: 24px;
+    font-size: 22px;
 }
 .delete-button {
     position: absolute;
     right: 0;
     top: 10px;
     font-size: 24px;
+    cursor: pointer;
+}
+.subtotal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 40px;
+}
+.subtotal div:first-child {
+    display: flex;
+    flex-direction: column;
+    font-size: 27px;
+}
+.subtotal div:first-child span:last-child {
+    font-size: 16px;
+    color: #CDCDCD;
+    margin-top: 10px;
+}
+.subtotal div:last-child {
+    color: #ED663B;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+.button {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 25px;
+}
+button {
+    width: 100%;
+    height: 68px;
+    font-size: 20px;
+    margin-top: 15px;
+    border-radius: 7px;
+}
+.button button:first-child {
+    color: #7e7b7b ;
+    border: 1px solid #7e7b7b ;
+    background-color: transparent;
+}
+.button button:last-child {
+    border: none;
+    color: white;
+    background-color: #4060F2;
+}
+.ship {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin-top: 50px;
+    align-items: center;
+}
+.ship-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background-color: transparent;
+    color: #4060F2;
+    border-radius: 50%;
+    font-size: 30px;
+    border: 1px solid #4060F2;
+}
+.ship span {
+    font-weight: 700;
+    font-size: 21px;
 }

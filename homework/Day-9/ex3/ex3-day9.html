@@ -13,7 +13,7 @@
         <div class="form">
             <div class="row">
                 <div class="text-input">
-                    <input type="text" id="first-name">
+                    <input type="text" id="first-name" autocomplete="off" placeholder=""  >
                     <label for="first-name">First Name*</label>
                 </div>
                 <div class="text-input">
@@ -34,8 +34,11 @@
                     </select>
                 </div>
             </div>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-            <button>Send message</button>
+            <div class="textarea-input">
+                <textarea name="" id="message" cols="30" rows="10"></textarea>
+                <label for="last-name">Message*</label>
+            </div>
+            <button>Send message</button> 
         </div>
     </div>
 </body>

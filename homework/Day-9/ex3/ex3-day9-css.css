@@ -13,6 +13,21 @@
     margin-top: 50px;
     width: 100vw;
 }
+h1 {
+    margin-bottom: 20px;
+}
+span {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+button {
+    padding: 10px 15px;
+    margin-top: 25px;
+    border-radius: 20px;
+    border: none;
+    background-color: #4D77D9;
+    color: white;
+}
 .form {
     display: flex;
     flex-direction: column;
@@ -22,19 +37,20 @@
 .row {
     display: flex;
 }
-input:focus, select:focus {
+input:focus, select:focus, textarea:focus {
     outline-style: none;
     box-shadow: none;
     border: 2px solid #4D77D9;
     border-radius: 5px;
     background-color: transparent;
 }
-.text-input label {
+.text-input label, .textarea-input label {
     color: rgba(0, 0, 0, 0.5);
     font-size: 12px;
     position: absolute;
     left: 10px;
     top: 12px;
+    transition: all 200ms ease-in;
 }
 .text-input, .select-input {
     display: flex;
@@ -54,4 +70,27 @@ input, select {
 }
 input {
     padding-left: 10px;
+}
+input:focus ~ label,
+textarea:focus ~ label{
+    top: 4px;
+    left: 4px;
+    font-size: 8px;
+}
+.textarea-input {
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+textarea {
+    display: block;
+    height: 100px;
+    width: 93%;
+    padding: 20px 15px;
+    box-sizing: content-box;
+}
+.textarea-input label {
+    margin-left: 10px;
 }

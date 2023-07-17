@@ -85,12 +85,20 @@ textarea:focus ~ label{
     display: flex;
 }
 textarea {
-    display: block;
-    height: 100px;
-    width: 93%;
+    height: 130px;
+    width: 98%;
     padding: 20px 15px;
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
 .textarea-input label {
     margin-left: 10px;
+}
+input::placeholder, textarea::placeholder {
+    color: transparent;
+}
+input:not(:placeholder-shown) ~ label,
+textarea:not(:placeholder-shown) ~ label {
+    top: 4px;
+    left: 4px;
+    font-size: 8px;
 }

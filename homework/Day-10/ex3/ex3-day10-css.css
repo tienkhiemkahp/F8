@@ -95,6 +95,9 @@
 .letter-filter:hover ~ .letter .page {
     transform: translateY(-100px);
 }
+.letter-filter:hover ~ .letter-shadow {
+    scale: 0.7;
+}
 .letter-filter:not(:hover) ~ .letter .letter-top {
     transition-delay: 0.8s;
 }
@@ -144,12 +147,17 @@
     top: 80px;
 }
 .letter-shadow {
+    box-shadow: 0 0 20px black;
+    background-color: black;
+    opacity: 0.4;
     display: block;
     position: absolute;
     top: 80%;
     height: 60%;
     width: 190px;
     height: 10px;
-    border-radius: 999px;
+    border-radius: 50%;
     z-index: 10;
+    scale: 1;
+    transition: scale 0.3s linear ;
 }

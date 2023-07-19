@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 2000px;
+    height: 100vh;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #323543 ;
+    justify-content: center;
+}
+.letter {
+    width: 200px;
+    height: 220px;
+    position: relative;
+    overflow: hidden;
+    transform: translateY(0);
+    transition: transform 0.3s linear ;
+}
+.letter-background {
+    width: 200px;
+    height: 120px;
+    background-color: #CB4E45;
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.letter-right-bottom {
+    width: 240px;
+    height: 240px;
+    transform: rotate(59.5deg);
+    background-color: #D55C51;
+    position: absolute;
+    top: 44px;
+    left: 38px;
+    z-index: 5;
+}
+.letter-left {
+    width: 240px;
+    height: 240px;
+    background-color: #D65349;
+    position: absolute;
+    top: 44px;
+    left: -80px;
+    rotate: 121deg;
+    z-index: 4;
+}
+.letter-top {
+    width: 110px;
+    height: 141.2px;
+    position: absolute;
+    z-index: 3;
+    top: 0px;
+    transform: rotateX(0deg);
+    transform-origin: top;
+    border: 100.2px solid;
+    border-color: #CD4A3F transparent transparent transparent;
+    transition: all 0.3s linear 0.3s;
+    transition-delay: 0s;
+}
+.letter-filter {
+    width: 200px;
+    height: 120px;
+    background-color: transparent;
+    position: absolute;
+    left: 42.3%;
+    z-index: 10;
+    top: 48.7%;
+    background-color: transparent;
+}
+.page {
+    width: 180px;
+    height: 220px;
+    position: relative;
+    z-index: 3;
+    transform: translateY(100px);
+    margin-left: 10px;
+    background-color: #FFFEFF ;
+    transition: transform 0.3s linear 0.5s;
+}
+.letter-filter:hover ~ .letter {
+    transform: translateY(40px);
+}
+.letter-filter:hover ~ .letter .letter-top {
+    transform: rotateX(-180deg);
+
+}
+.letter > * {
+    margin-top: 100px;
+}
+.letter-filter:hover ~ .letter .page {
+    transform: translateY(-100px);
+}
+.letter-filter:not(:hover) ~ .letter .letter-top {
+    transition-delay: 0.8s;
+}
+.page-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 13px;
+    overflow: hidden;
+}
+.trapezoid {
+    transform: skew(-25deg);
+    width: 9px;
+    height: 100%;
+    background-color: #CB4E45;
+    margin-left: 10px;
+}
+.page .box-1 {
+    width: 80px;
+    height: 15px;
+    margin-top: 15px;
+    margin-left: 10px;
+    background-color: #CD4A3F;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+.page .box-2 {
+    width: 70px;
+    height: 15px;
+    margin-left: 10px;
+    background-color: #CD4A3F;
+    position: absolute;
+    top: 55px;
+    left: 10px;
+}
+.page>div:last-of-type {
+    width: 40px;
+    height: 40px;
+    border-radius: 99px;
+    background-color: #D55C51;
+    position: absolute;
+    right: 20px;
+    top: 80px;
+}
+.letter-shadow {
+    display: block;
+    position: absolute;
+    top: 80%;
+    height: 60%;
+    width: 190px;
+    height: 10px;
+    border-radius: 999px;
+    z-index: 10;
+}

@@ -3,27 +3,281 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Asset/resetcss.css">
     <link rel="stylesheet" href="./ex1-day11-css.css">
+    <link rel="stylesheet" href="./grid.css">
     <script src="https://kit.fontawesome.com/fee3c7cee7.js" crossorigin="anonymous"></script>
-    <title>Ex1</title>
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+    </style>
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="header-logo">
-                <img src="./Asset/logo.svg">
+    <div class="wrap">
+        <div class="header-wrap">
+            <div class="container">
+                <div class="row display-flex justify-content-center">
+                    <input type="checkbox" name="menu-btn" id="menu-btn">
+                    <div class="header">
+                        <div class="header-logo">
+                            <img src="./Asset/logo.svg" alt="logo">
+                        </div>
+                        <div class="menu-btn">
+                            <label for="menu-btn"></label>
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+                    <div class="nav-box col-lg-7">
+                        <nav>
+                            <ul>
+                                <li class="display-flex align-items-center">
+                                    <a href="#">Home</a>
+                                </li>
+                                <li class="display-flex align-items-center">
+                                    <a href="#">Menu</a>
+                                </li>
+                                <li class="display-flex align-items-center">
+                                    <a href="#">Service</a>
+                                </li>
+                                <li class="display-flex align-items-center">
+                                    <a href="#">Shop</a>
+                                </li class="display-flex align-items-center">
+                                <li>
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    <input type="text" placeholder="Search">
+                                    <i class="fa-solid fa-basket-shopping"></i>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
             </div>
-            <nav>
-                <ul>
-                    <li><span>Home</span></li>
-                    <li><span>Menu</span></li>
-                    <li><span>Service</span></li>
-                    <li><span>Shop</span></li>
-                </ul>
-            </nav>
-            <div class="search-input"></div>
         </div>
+        <div class="content-1-wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-lg-6 col-xl-6 display-flex grover-content">
+                        <div class="content-top-box">
+                            <span>More and faster</span>
+                            <img src="./Asset/strawberry.svg" alt="">
+                        </div>
+                        <div class="content-title">
+                            <span>Groceries delivered in as little as <span>2 hours</span></span>
+                        </div>
+                        <div class="content-para">
+                            <span>Grocen atssures fresh grocery every morning to your family without getting out in this pandemic.</span>
+                        </div>
+                        <div class="content-1-btn-wrap">
+                            <div class="container">
+                                <div class="row display-flex">
+                                    <button class="col-4 col-sm-4 col-md-3 col-lg-3 col-xl-3">Oder Now</button>
+                                    <img src="https://hoanganf8.github.io/htmlcss_project01/assets/images/button-play.svg" alt="">
+                                    <span>Oder process</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 content-1-image">
+                        <img src="./Asset/header-img.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-2-wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="content-2-title-1">
+                        <span>What we Serve</span>
+                    </div>
+                    <div class="content-2-title-2">
+                        <span>Fruit And Vegetable Delivered To Your Home</span>
+                    </div>
+                    <div class="service-box-wrap">
+                        <div class="container">
+                            <div class="row align-items-center justify-content-center">
+                                <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 service-box-1 display-flex justify-content-center">
+                                    <div>
+                                        <img src="./Asset/service-ic1.svg" alt="">
+                                        <h3>Free shipping</h3>
+                                        <span>Enjoy Order in a hand using the fresness of groceries</span>
+                                    </div>
+                                    <div class="filter"></div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 service-box-1 display-flex justify-content-center">
+                                    <div>
+                                        <img src="./Asset/service-ic1.svg" alt="">
+                                        <h3>Free shipping</h3>
+                                        <span>Enjoy Order in a hand using the fresness of groceries</span>
+                                    </div>
+                                    <div class="filter"></div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 service-box-1 display-flex justify-content-center">
+                                    <div>
+                                        <img src="./Asset/service-ic1.svg" alt="">
+                                        <h3>Free shipping</h3>
+                                        <span>Enjoy Order in a hand using the fresness of groceries</span>
+                                    </div>
+                                    <div class="filter"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-3-wrap">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 content-1-image">
+                        <img src="./Asset/feat.png" alt="">
+                    </div>
+                    <div class="col-sm-12 col-lg-6 col-xl-6 display-flex grover-content">
+                        <div class="content-title">
+                            <span>WHY CHOOSE US</span>
+                        </div>
+                        <div class="content-title">
+                            <span>Find Favorites And Discover New Ones</span>
+                        </div>
+                        <div class="content-para">
+                            <span>At vero eos et accusamus et iusto odio dignissimos ducimus blanditiis praesen voluptatum deleniti.</span>
+                        </div>
+                        <div class="content-1-btn-wrap">
+                            <div class="container">
+                                <div class="row justify-content-start display-flex">
+                                    <button class="col-4 col-sm-4 col-md-3 col-lg-3 col-xl-3">Explore Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-4-wrap">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-12 col-xl-6 col-lg-6 display-flex grover-content">
+                        <div class="content-title">
+                            <span>WHY CHOOSE US</span>
+                        </div>
+                        <div class="content-title">
+                            <span>Find Favorites And Discover New Ones</span>
+                        </div>
+                        <div class="content-para">
+                            <span>At vero eos et accusamus et iusto odio dignissimos ducimus blanditiis praesen voluptatum deleniti.</span>
+                        </div>
+                        <div class="content-1-btn-wrap">
+                            <div class="container">
+                                <div class="row justify-content-start display-flex">
+                                    <button class="col-4 col-sm-4 col-md-3 col-lg-3 col-xl-3">Explore Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 content-1-image">
+                        <img src="./Asset/feat2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-5-wrap">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 content-1-image display-flex justify-content-center">
+                        <img src="./Asset/mobile.svg" alt="">
+                    </div>
+                    <div class="col-sm-12 col-lg-6 col-xl-6 display-flex grover-content">
+                        <div class="content-title">
+                            <span>WHY CHOOSE US</span>
+                        </div>
+                        <div class="content-title">
+                            <span>Find Favorites And Discover New Ones</span>
+                        </div>
+                        <div class="content-para">
+                            <span>At vero eos et accusamus et iusto odio dignissimos ducimus blanditiis praesen voluptatum deleniti.</span>
+                        </div>
+                        <div class="content-5-btn-wrap">
+                            <div class="container">
+                                <div class="row justify-content-start display-flex">
+                                    <button>
+                                        <a href="#">
+                                            <img src="./Asset/apple.svg" alt="">
+                                            App Store
+                                        </a>
+                                    </button>
+                                    <button>
+                                        <a href="#">
+                                            <img src="./Asset/playstore.svg" alt="">
+                                            Play store
+                                        </a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="row display-flex justify-content-center">
+                    <ul>
+                        <div class="container">
+                            <div class="row">
+                                <li class="col-lg-4">
+                                    <div class="footer-logo display-flex justify-content-center">
+                                        <img src="./Asset/logo.svg" alt="">
+                                    </div>
+                                    <div class="footer-para display-flex align-items-center">
+                                        <span>Fast delivery, which is active all over the world, serves with many transportation vehicles.</span>
+                                    </div>
+                                </li>
+                                <li class="col-lg-2 display-flex align-items-center flex-direction-column">
+                                    <h3>Company</h3>
+                                    <ul>
+                                        <li class="display-flex align-items-center flex-direction-column" ><a href="#">About Us</a></li>
+                                        <li class="display-flex align-items-center flex-direction-column"><a href="#">Blog</a></li>
+                                        <li class="display-flex align-items-center flex-direction-column"><a href="#">All Products</a></li>
+                                        <li class="display-flex align-items-center flex-direction-column"><a href="#">Locations Map</a></li>
+                                    </ul>
+                                </li>
+                                <li class="col-lg-2 display-flex align-items-center flex-direction-column">
+                                    <h3>Company</h3>
+                                    <ul>
+                                        <li class="display-flex align-items-center flex-direction-column"><a href="#">About Us</a></li>
+                                        <li class="display-flex align-items-center flex-direction-column"><a href="#">Blog</a></li>
+                                        <li class="display-flex align-items-center flex-direction-column"><a href="#">All Products</a></li>
+                                        <li class="display-flex align-items-center flex-direction-column"><a href="#">Locations Map</a></li>
+                                    </ul>
+                                </li>
+                                <li class="col-lg-4 display-flex align-items-center flex-direction-column">
+                                    <h3>Get In Touch</h3>
+                                    <div class="footer-para display-flex align-items-center">
+                                        <span>Fast delivery, which is active all over the world, serves with many transportation vehicles.</span>
+                                    </div>
+                                </li>
+                            </div>
+                        </div>
+
+                    </ul>
+                    <div class="footer-driver">
+                        <div class="container">
+                            <div class="row display-flex">
+                                <div class="col-sm-12 col-md-5">
+                                    <div class="copyright">
+                                        <span>All Rights Reserved @ BESNIK 2021</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-5">
+                                    <div class="condition">
+                                        <a href="#">Terms & Conditions</a>
+                                        <a href="#">Privacy & Policy</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>

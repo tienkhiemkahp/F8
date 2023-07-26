@@ -102,11 +102,12 @@ input[type=password], input[type=text], input[type=email] {
     @include adjust-middle;
     margin-top: 80px;
     .rocket-image {
+        width: 100px;
+        height: 100px;
         position: absolute;
         top: -70px;
         left: -70px;
-        // display: none;
-        opacity: 0;
+        visibility: hidden;
     }
     .login-form {
         opacity: 0;
@@ -123,7 +124,7 @@ input[type=password], input[type=text], input[type=email] {
         padding: 64px;
         border-radius: 10px;
         width: 100%;
-        top: 0;
+        top: -50px;
         pointer-events: none;
     }
     .form {
@@ -332,8 +333,8 @@ input[type=password] {
     .landing-info-text {
         display: none;
     }
-    .rocket-image {
-        display: none;
+    .register-form {
+        top: 0px;
     }
 }
 @media screen and (min-width: 992px) {
@@ -366,16 +367,15 @@ input[type=password] {
     .landing-wapper {
         height: 100vh;
     }
-    .rocket-image {
-        opacity: 1;
-    }
     .landing-info {
         padding-right: 90px;
+    }
+    .rocket-image {
+        visibility: visible;
     }
 }
 @media screen and (min-width: 1500px) {
     .landing-wapper::after {
-        z-index: 0;
         content: "";
         position: absolute;
         width: 65%;
@@ -388,9 +388,13 @@ input[type=password] {
     }
     body {
         overflow: hidden;
+    }
+    .landing-wapper {
+        overflow: hidden;
         height: 100vh;
     }
     .landing-form {
-        margin-bottom: 100px;
+       margin-top: -30px;
+       scale: 0.9;
     }
 }

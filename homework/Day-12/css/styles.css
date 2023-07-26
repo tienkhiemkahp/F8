@@ -484,6 +484,9 @@ input[type=password] {
     overflow: hidden;
     height: 100vh;
   }
+  .landing-form {
+    margin-bottom: 100px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

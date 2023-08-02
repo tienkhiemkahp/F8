@@ -1,59 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-    <!-- CSS -->
-    <link rel="stylesheet" href="./css/grid.css"/>
-    <link rel="stylesheet" href="./css/style.css"/>
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <!-- header -->
-    <header class="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-2">
-                    <div class="header-logo">
-                        <a href="#">
-                            <img src="./assets/logo/Logo Greenchop_White 1.png" alt="">
-                        </a>
-                    </div>
-                    <!-- End .header-logo -->
-                </div>
-                <div class="col-10">
-                    <div class="header-right">
-                        <nav class="menu">
-                            <ul>
-                                <li><a href="./pages/home.html">Trang chủ</a></li>
-                                <li><a href="./pages/about.html">Về Greenchop</a></li>
-                                <li><a href="./pages/products.html">Sản phẩm</a></li>
-                                <li><a href="./pages/news.html">Tin tức</a></li>
-                                <li><a href="./pages/contact.html">Liên hệ</a></li>
-                            </ul>
-                        </nav>
-                        <!-- End .menu -->
-                        <div class="header-icon">
-                            <div class="cart-icon">
-                                <a href="#">
-                                    <img src="./assets/icons/cart.svg" alt="">
-                                    <span>3</span>
-                                </a>
-                            </div>
-                            <!-- End .cart-icon -->
-                            <div class="search-icon">
-                                <img src="./assets/icons/search.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End .header-right -->
-            </div>
+  <input type="checkbox" id="menu-btn" hidden />
+  <header class="header">
+    <div class="container">
+      <a href="#" class="logo">
+        <img src="./assets/logo/logo.png" alt="">
+      </a>
+      <nav>
+        <a href="#" class="nav-link active">Trang chủ</a>
+        <a href="#" class="nav-link">Về Greenchop</a>
+        <a href="#" class="nav-link">Sản phẩm</a>
+        <a href="#" class="nav-link">Tin tức</a>
+        <a href="#" class="nav-link">liên hệ</a>
+      </nav>
+      <div class="action-btn">
+        <a href="#" class="cart">
+          <img src="./assets/icons/cart.svg" alt="">
+          <span class="cart-num">3</span>
+        </a>
+        <a href="#" class="search">
+          <img src="./assets/icons/search.svg" alt="">
+        </a>
+        <label for="menu-btn">
+          <img src="./assets/icons/menu.svg" alt="">
+        </label>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="banner">
+      <div class="container">
+        <div class="info">
+          <h1 class="title">GreenChop: Tiện gấp dễ gắp</h1>
+          <h2 class="title-2">AN TOÀN HƠN GIỮA MÙA COVID</h2>
+          <p class="banner-text">
+              GreenChop là sản phẩm đũa thay đầu duy nhất trên thị
+              trường hiện tại. Sản phẩm cho phép người dùng tháo
+              lắp và thay mới đầu đũa 100% trong mỗi bữa ăn. Nhờ
+              đó, GreenChop giúp ngăn ngừa khả năng lây lan dịch
+              bệnh và đảm bảo an toàn cho người dùng.
+          </p>
         </div>
-    </header>
+        <div class="banner-image">
+          <img src="./assets/images/hero-image.png" alt="" />
+          <span>GREEN CHOP</span>
+        </div>
+      </div>
+    </section>
+    <section class="comment">
+      <div class="container">
+          <h3 class="comment-title">
+              GreenChop: Giữ an toàn trong từng bữa ăn của người Việt
+          </h3>
+          <p class="comment-text">
+              Với sự tinh tế trong việc thấu hiểu hành vi của khách
+              hàng cùng ý tưởng đột phá, GreenChop đã trở thành sản
+              phẩm không thể thiếu trong mọi bữa ăn mùa dịch tại các
+              nhà hàng, khách sạn, quán ăn...
+          </p>
+          <div class="comment-wrapper">
+              <div class="circle-1"></div>
+              <div class="circle-2"></div>
+              <div class="comment-box-wrap">
+                  <div class="comment-box">
+                      <img src="./assets/icons/quality-white.svg" alt="" class="icon"/>
+                      <span class="comment-box-number">1000+</span>
+                      <p class="text-comment">
+                          Hộ gia đình tin dùng GreenChop
+                      </p>
+                  </div>
+                  <div class="comment-box">
+                      <img src="./assets/icons/quality-white.svg" alt=""class="icon"/>
+                      <span class="comment-box-number">600+</span>
+                      <p class="text-comment">
+                          Nhà hàng đã phục vụ GreenChop cho thực khách
+                      </p>
+                  </div>
+                  <div class="comment-box">
+                      <img src="./assets/icons/quality-white.svg" alt="" class="icon"/>
+                      <span class="comment-box-number">20+</span>
+                      <p class="text-comment">
+                          Tỉnh thành được GreenChop phủ sóng
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  </main>
+  <label for="menu-btn" class="overlay"></label>
 </body>
 </html>

@@ -1,44 +1,12 @@
 //Import Parts
-@import "./parts/variables";
-@import "./parts/reset";
-@import "./parts/mixins";
-@import "./parts/base";
+@import "parts/variables";
+@import "parts/reset";
+@import "parts/mixin";
+@import "parts/base";
 
 //Import Layout
-@import "./layouts/header";
-@import "./layouts/footer";
+@import "layouts/header";
+@import "layouts/footer";
 
-.header {
-    height: 108.33px;
-    width: 100%;
-    // background-color: red;
-    position: fixed;
-    top: 0;
-    box-shadow: 0px 1.6666666269302368px 8.333333015441895px 0px rgba(0, 0, 0, 0.15);
-    .header-right {
-        margin-left: 100px;
-        display: inline-flex;
-        align-items: flex-start;
-        margin-top: 51.67px;
-        gap: 50px;
-        .menu {
-            ul {
-                display: flex;
-                column-gap: 50px;
-                li {
-                    a {
-                        font-size: 20px;
-                        font-style: normal;
-                        font-weight: 600;
-                        line-height: 26px; /* 130% */
-                    }
-                }
-            }
-        }
-        .header-icon {
-            display: flex;
-            justify-content: center;
-            column-gap: 50px;
-        }
-    }
-}
+// Import page
+@import "./page/home.scss"

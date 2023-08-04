@@ -1,4 +1,4 @@
-var a = 8, b =123, c = 5;   
+var a = 8, b =-123, c = 5;   
 document.write(`3 số a,b,c là:  ${a}, ${b}, ${c} </br>`);
 var max, min, between;
 min = a;

@@ -17,9 +17,9 @@ var data = [
 ];
 
 var html = ``;
-for (i=0; i<data.length; i++) {
-if (i%2!==0) {
-    html += `
+for (i = 0; i < data.length; i++) {
+    if (i % 2 !== 0) {
+        html += `
     <div class="content">
         <div>
             <h2>${data[i].title}</h2>
@@ -30,8 +30,8 @@ if (i%2!==0) {
         </div>
     </div>
     `
-} else {
-    html += `
+    } else {
+        html += `
     <div class="content">
         <div>
         <img src="${data[i].image}">
@@ -42,6 +42,6 @@ if (i%2!==0) {
         </div>
     </div>
     `
-}
+    }
 }
 document.write(html);

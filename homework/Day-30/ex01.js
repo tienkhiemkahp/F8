@@ -5,10 +5,6 @@ var textContent = document.querySelector(".text-content-area");
 var quantity = document.querySelector(".text-quantity");
 var characterCount = quantity.querySelector(".character-count");
 var wordCount = quantity.querySelector(".word-count");
-var newBtn = document.querySelector(".new-btn");
-var txtBtn = document.querySelector(".txt-btn");
-var pdfBtn = document.querySelector(".pdf-btn");
-var fileNameInput = document.querySelector(".file-name-input");
 var boldBtn = document.querySelector(".btn-bold");
 var underlinedBtn = document.querySelector(".btn-underlined");
 var italicsBtn = document.querySelector(".btn-italics");
@@ -45,31 +41,4 @@ italicsBtn.addEventListener("click", function () {
 
 colorInput.addEventListener("input", function () {
   document.execCommand("foreColor", false, this.value);
-});
-
-function getFileName() {
-  var fileName = fileNameInput.value;
-  return fileName;
-}
-
-fileNameInput.addEventListener("input", getFileName);
-
-newBtn.addEventListener("click", () => {
-  fileName = getFileName();
-  textContent.innerText = "";
-});
-
-txtBtn.addEventListener("click", () => {
-  fileName = getFileName();
-
-  var blob = new Blob([textContent.innerText], { type: "text/plain" });
-  var url = URL.createObjectURL(blob);
-  var link = document.createElement("a");
-  link.href = url;
-  link.download = `${fileName}.txt`;
-  link.click();
-});
-
-pdfBtn.addEventListener("click", () => {
-  html2pdf(textContent).save(fileName);
 });

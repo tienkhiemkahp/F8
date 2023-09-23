@@ -87,6 +87,9 @@
   .show {
     display: flex;
   }
+  .btn-italics, .btn-underlined, .btn-bold {
+    cursor: pointer;
+  }
   
   .btn-bold b,
   .text-content-area b {
@@ -102,4 +105,3 @@
   .text-content-area u {
     text-decoration: underline;
   }
-  

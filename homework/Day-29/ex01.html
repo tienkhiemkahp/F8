@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sortable List</title>
+    <style>
+    .container {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .module-item, .lesson-item {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 5px 0;
+        cursor: move;
+    }
+
+    .module-item:hover, .lesson-item:hover {
+        background-color: #f0f0f0;
+    }
+
+    .dragging {
+        opacity: 0.5;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container" id="sortable-list">
+    </div>
+
+    <script src="./ex01.js"></script>
+</body>
+</html>
